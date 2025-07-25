@@ -1,0 +1,78 @@
+const styles = {
+  container: {
+    minHeight: '100vh',
+    backgroundColor: '#000',
+    color: '#fff',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '32px 16px',
+  },
+  logoCircle: {
+    width: '160px',
+    height: '160px',
+    borderRadius: '50%',
+    backgroundColor: '#000',
+    overflow: 'hidden',
+    marginBottom: '12px',
+  },
+  logoImg: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    borderRadius: '50%',
+  },
+  titulo: {
+    fontSize: '24px',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    margin: '0 0 4px 0',
+  },
+  versao: {
+    fontSize: '10px',
+    color: '#ccc',
+    marginBottom: '10px',
+  },
+  subtitulo: {
+    color: '#ffb700',
+    fontWeight: 'bold',
+    fontSize: '16px',
+    letterSpacing: '1px',
+    marginBottom: '16px',
+  },
+  calendarioWrapper: {
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    padding: '10px',
+    color: '#000',
+  },
+  horariosWrapper: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: '10px',
+    margin: '20px 0',
+  },
+  horarioBtn: {
+    backgroundColor: '#ffe97f',
+    color: '#000',
+    fontWeight: 'bold',
+    padding: '10px 16px',
+    border: 'none',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '14px',
+  },
+  botaoVoltar: {
+    backgroundColor: '#5daaff',
+    color: '#fff',
+    fontSize: '18px',
+    fontWeight: 'bold',
+    padding: '10px 28px',
+    borderRadius: '28px',
+    border: 'none',
+    cursor: 'pointer',
+  },
+};
+
+export default styles;
