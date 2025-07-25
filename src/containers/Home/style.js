@@ -88,13 +88,22 @@ const styles = {
     textDecoration: 'underline',
     fontSize: '14px',
     cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '16px',
+    height: '1px',
+  },
+  beta: {
+    margin: '10px',
+    marginTop: '10px',
   },
   identificar: {
     color: '#f2883a',
     fontWeight: 'bold',
     display: 'flex',
     justifyContent: 'space-between',
-    height: '24px',
+    height: '20px',
+    marginTop: '5px',
   },
 };
 

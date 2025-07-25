@@ -54,7 +54,7 @@ const styles = {
     cursor: 'pointer',
     transition: '0.2s',
   },
-  cardContent: { //nao é
+  cardContent: { 
     display: 'flex',
     alignItems: 'center',
     gap: '12px',

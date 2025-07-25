@@ -73,6 +73,180 @@ const styles = {
     border: 'none',
     cursor: 'pointer',
   },
+
+  // ✅ ESTILOS PARA TELA DE CONFIRMAÇÃO
+  statusConfirmado: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '8px',
+    backgroundColor: '#2ed573',
+    padding: '10px 20px',
+    borderRadius: '25px',
+    marginBottom: '24px',
+    animation: 'pulse 2s infinite',
+  },
+  checkIcon: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    color: '#fff',
+  },
+  statusTexto: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+    color: '#fff',
+  },
+
+  // Card de Resumo
+  resumoCard: {
+    width: '100%',
+    maxWidth: '370px',
+    backgroundColor: '#fff',
+    color: '#000',
+    borderRadius: '12px',
+    padding: '20px',
+    marginBottom: '24px',
+    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.3)',
+  },
+  resumoItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingBottom: '12px',
+    marginBottom: '10px',
+    borderBottom: '1px solid #eee',
+  },
+  resumoItemServicos: {
+    paddingBottom: '12px',
+    marginBottom: '12px',
+    borderBottom: '1px solid #eee',
+  },
+  resumoLabel: {
+    fontSize: '14x',
+    fontWeight: '500',
+    color: '#666',
+  },
+  resumoValor: {
+    fontSize: '15px',
+    color: '#000',
+  },
+  resumoValorDestaque: {
+    fontSize: '14px',
+    fontWeight: 'bold',
+    color: '#ff7a00',
+  },
+  // ✅ NOVO ESTILO PARA HORÁRIO SIMPLIFICADO
+  horarioSimples: {
+    textAlign: 'right',
+  },
+  dataSimples: {
+    fontSize: '15px',
+    color: '#000',
+  },
+  servicosLista: {
+    marginTop: '8px',
+  },
+  servicoItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    fontSize: '13px',
+    padding: '2px 0',
+    color: '#444',
+  },
+  valorTotal: {
+    fontSize: '18px',
+    fontWeight: 'bold',
+    color: '#2ed573',
+  },
+
+  // Lembretes
+  lembretesTitulo: {
+    fontSize: '16px',
+    fontWeight: 'bold',
+    color: '#ffb700',
+    textAlign: 'center',
+    marginBottom: '16px',
+    marginTop: '0px',
+  },
+  lembretesContainer: {
+    width: '100%',
+    maxWidth: '400px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+    marginBottom: '24px',
+  },
+  lembreteBtn: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    padding: '12px 16px',
+    borderRadius: '8px',
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: '14px',
+    fontWeight: '500',
+    transition: 'all 0.3s ease',
+    position: 'relative',
+  },
+  lembreteIcon: {
+    fontSize: '16px',
+  },
+  checkMark: {
+    position: 'absolute',
+    right: '16px',
+    fontSize: '14px',
+    fontWeight: 'bold',
+  },
+
+  // Botões de Ação
+  botoesContainer: {
+    width: '100%',
+    maxWidth: '400px',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '12px',
+    marginBottom: '24px',
+  },
+  botaoCompartilhar: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '8px',
+    backgroundColor: '#333',
+    color: '#fff',
+    border: '1px solid #555',
+    padding: '12px 16px',
+    borderRadius: '8px',
+    fontSize: '14px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+  },
+  compartilharIcon: {
+    fontSize: '16px',
+  },
+  botaoAgendar: {
+    width: '100%',
+    backgroundColor: '#ffc132',
+    color: '#000',
+    fontWeight: 'bold',
+    padding: '16px',
+    border: 'none',
+    borderRadius: '28px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+  },
+
+  // Footer
+  footer: {
+    textAlign: 'center',
+    color: '#666',
+    fontSize: '12px',
+    lineHeight: '1.4',
+  },
 };
 
 export default styles;

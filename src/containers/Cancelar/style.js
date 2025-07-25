@@ -57,7 +57,7 @@ const styles = {
     marginTop: '8px',
   },
   button: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#ffb700',
     color: '#fff',
     fontWeight: 'bold',
     fontSize: '16px',

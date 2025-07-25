@@ -37,7 +37,7 @@ const Home = ({ onAgendar, onCancelar }) => {
           />
           <div style={{ textAlign: 'center' }}>
             <div style={styles.barberLine}></div>
-            <p>(beta-teste)</p>
+            <p style={styles.beta}>(beta-teste)</p>
           </div>
           <h1 style={styles.identificar}>Identificação</h1>
         </div>

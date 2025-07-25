@@ -16,13 +16,28 @@ const App = () => {
   };
 
   // Quando o cliente escolhe barbeiro e serviço
-  const handleSelecionarBarbeiro = ({ barbeiro, servico }) => {
-    setDadosAgendamento({ barbeiro, servico });
+  const handleSelecionarBarbeiro = ({ barbeiro, servico, servicos, valorTotal, tempoTotal }) => {
+    setDadosAgendamento({ 
+      barbeiro, 
+      servico, 
+      servicos, // ✅ Para múltiplos serviços
+      valorTotal, 
+      tempoTotal 
+    });
     setEtapa('datahora');
   };
 
   // Quando o agendamento é finalizado com data e hora
   const handleAgendamentoFinalizado = (agendamentoFinal) => {
+    // ✅ Se é um novo agendamento, volta para a Home
+    if (agendamentoFinal.novoAgendamento) {
+      setDadosCliente(null);
+      setDadosAgendamento(null);
+      setEtapa('cliente');
+      return;
+    }
+    
+    // ✅ Senão, processa o agendamento normalmente
     console.log('Agendamento concluído:', {
       cliente: dadosCliente,
       ...agendamentoFinal,
@@ -55,6 +70,9 @@ const App = () => {
             cliente: dadosCliente,
             barbeiro: dadosAgendamento.barbeiro,
             servico: dadosAgendamento.servico,
+            servicos: dadosAgendamento.servicos, // ✅ Para múltiplos serviços
+            valorTotal: dadosAgendamento.valorTotal,
+            tempoTotal: dadosAgendamento.tempoTotal,
           }}
           onVoltar={() => setEtapa('barbeiro')}
           onContinuar={handleAgendamentoFinalizado}
